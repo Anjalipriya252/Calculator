@@ -1,0 +1,82 @@
+<html>
+    <head>
+<style>
+    input{
+        width:40px;
+        background-color:orange;
+        
+    }
+    #answerstyle{
+        width:130px;
+        background-color: aliceblue;
+        color: black;
+        border: 2px solid black;
+    }
+    #clear{
+        width:130px;
+        padding-bottom: 2px;
+        margin-bottom: 2px;
+        background-color: greenyellow;
+    }
+    .formstyle{
+width:130px;
+height:266px;
+padding-left: 1px;
+margin:auto;
+border: 2px solid black;
+    }
+    #plus{
+        background-color: aqua;
+    }
+    #minus{
+        background-color: aqua;
+    }
+    #multiply{
+        background-color: aqua;
+    }
+    #divide{
+        background-color: aqua;
+    }
+    #equalto{
+        background-color: aqua;
+    }
+</style>
+    </head>
+    <body>
+        <div class="formstyle">
+            <form name="forms">
+                <input type="text" name="answer" id="answerstyle"> <br>
+                <br>
+                <input type="button" value="1" onclick="forms.answer.value+='1'">
+                <input type="button" value="2" onclick="forms.answer.value+='2'">
+                <input type="button" value="3" onclick="forms.answer.value+='3'">
+                <br>
+                <br>
+                <input type="button" value="4" onclick="forms.answer.value+='4'">
+                <input type="button" value="5" onclick="forms.answer.value+='5'">
+                <input type="button" value="6" onclick="forms.answer.value+='6'">
+                <br>
+                <br>
+                <input type="button" value="7" onclick="forms.answer.value+='7'">
+                <input type="button" value="8" onclick="forms.answer.value+='8'">
+                <input type="button" value="9" onclick="forms.answer.value+='9'">
+                <br>
+                <br>
+                <input type="button" value="+" onclick="forms.answer.value+='+'" id="plus">
+                <input type="button" value="0" onclick="forms.answer.value+='0'">
+                <input type="button" value="-" onclick="forms.answer.value+=' - '" id="minus">
+              <br>
+                <br>
+                <input type="button" value="*" onclick="forms.answer.value+='*'" id="multiply">
+                <input type="button" value="/" onclick="forms.answer.value+='/'" id="divide">
+                <input type="button" value="=" onclick="forms.answer.value=eval(forms.answer.value)" id="equalto">
+                <br>
+                <br>
+                <input type="button" value="Clear All" onclick="forms.answer.value=''" id="clear">
+                <!--id = clear to give shape to clear all button-->
+
+            </form>
+
+        </div>
+    </body>
+</html>
